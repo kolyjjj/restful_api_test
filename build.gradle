@@ -13,3 +13,7 @@ dependencies {
             'com.jayway.restassured:json-schema-validator:2.3.1'
 
 }
+
+task wrapper(type: Wrapper){
+    gradleVersion = '1.11'
+}
