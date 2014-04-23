@@ -16,11 +16,11 @@ public class DemoTest {
     public void setUp() throws Exception {
         RestAssured.port = 80;
     }
-
+    
     @Test
     public void should_assert_json_field_from_response_from_an_api_server() {
         RestAssured.baseURI = "http://ip.jsontest.com";
-        get("/").then().assertThat().body("ip", is("222.126.141.253"));
+        get("/").then().assertThat().body("ip", is("171.216.170.10"));
     }
 
     @Test
